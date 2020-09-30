@@ -154,10 +154,10 @@ abstract class SpatialHelper { // declare abstract, we don't want instances (tri
     }
 
     /**
-     * @param $wkt
+     * @param $json
      * @return mixed
      */
-    public static function jsonToGeorss($wkt) {
+    public static function jsonToGeorss($json) {
         $geom = geoPHP::load($json,'json');
         return $geom->out('georss');
     }
