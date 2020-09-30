@@ -22,8 +22,7 @@ namespace sjaakp\spatial;
  * @link http://dev.mysql.com/doc/refman/5.6/en/gis-data-formats.html#gis-wkt-format
  *
  */
-use yii\helpers\Json;
-use geoPHP;
+use \geoPHP\geoPHP;
 
 abstract class SpatialHelper { // declare abstract, we don't want instances (trick from Zend)
     /**
